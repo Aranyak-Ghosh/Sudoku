@@ -6,11 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import {GameGridPage} from '../pages/game-grid/game-grid';
+import { GameGridProvider } from '../providers/game-grid/game-grid';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    GameGridPage
   ],
   imports: [
     BrowserModule,
@@ -19,12 +21,14 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    GameGridPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    GameGridProvider
   ]
 })
 export class AppModule {}

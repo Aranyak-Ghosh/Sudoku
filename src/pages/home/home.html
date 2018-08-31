@@ -1,13 +1,13 @@
 <ion-content padding>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <ion-item padding>
+  <ion-item padding-bottom>
     <ion-icon item-start name="arrow-back"></ion-icon>
     <h2 class="center raleway-font">Theme</h2>
     <ion-icon item-end name="arrow-forward"></ion-icon>
   </ion-item>
 
-  <img id="logo" src="assets/imgs/sudoku(1).png">
+  <img id="logo" src="assets/imgs/sudoku.png">
 
   <ion-item padding>
     <ion-icon item-start name="arrow-back"></ion-icon>
@@ -15,7 +15,7 @@
     <ion-icon item-end name="arrow-forward"></ion-icon>
   </ion-item>
 
-  <button padding class="btn btn--action" id="start">Start Game</button>
+  <button padding class="btn btn--action" (click)="goToGame()" id="start">Start Game</button>
   <br>
   <button padding class="btn btn--action" id="resume">Resume Previous Game</button>
 
