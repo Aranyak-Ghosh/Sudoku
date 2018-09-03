@@ -356,7 +356,7 @@ export class GameGridProvider {
         var peer = this.SQUARE_PEERS_MAP[square][pi];
 
         var candidates_new =
-          sudoku._eliminate(candidates, peer, target_val);
+          this._eliminate(candidates, peer, target_val);
 
         if (!candidates_new) {
           return false;
