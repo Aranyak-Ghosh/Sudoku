@@ -1,3 +1,3 @@
 # Sudoku
 
-An ionic based mobile Sudoku game
+A cross platform Sudoku application built using ionic 3
